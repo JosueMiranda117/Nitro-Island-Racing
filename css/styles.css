@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #111;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px;
+}
+
+canvas {
+    display: block;
+
+    width: 1000px;
+    height: 600px;
+
+    background: #222;
+
+    border: 3px solid white;
+}
