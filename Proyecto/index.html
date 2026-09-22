@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nitro Island Racing</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+    <main id="app">
+
+
+        <!-- =================================
+             PANTALLA DE CARGA
+        ================================== -->
+
+        <section id="pantalla-carga" class="pantalla activa">
+
+            <div class="carga-contenido">
+
+                <h1>NITRO ISLAND</h1>
+
+                <h2>RACING</h2>
+
+                <p>
+                    Preparando motores...
+                </p>
+
+                <div class="barra-carga">
+
+                    <div id="progreso-carga"></div>
+
+                </div>
+
+                <p id="texto-carga">
+                    Cargando...
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             MENU PRINCIPAL
+        ================================== -->
+
+        <section id="menu-principal" class="pantalla">
+
+            <div class="menu-contenido">
+
+                <h1>NITRO ISLAND</h1>
+
+                <h2>RACING</h2>
+
+                <p class="subtitulo">
+                    ¡Prepárate para la carrera!
+                </p>
+
+
+                <div class="menu-botones">
+
+                    <button id="btn-carrera">
+                        CARRERA RÁPIDA
+                    </button>
+
+
+                    <button id="btn-garaje">
+                        GARAJE
+                    </button>
+
+
+                    <button id="btn-tutorial">
+                        TUTORIAL
+                    </button>
+
+
+                    <button id="btn-configuracion">
+                        CONFIGURACIÓN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             SELECCIÓN DE VEHÍCULO
+        ================================== -->
+
+        <section id="pantalla-vehiculos" class="pantalla">
+
+            <div class="vehiculos-contenido">
+
+                <h1>
+                    SELECCIONA TU VEHÍCULO
+                </h1>
+
+                <p class="subtitulo">
+                    Elige tu carro para comenzar
+                    la carrera
+                </p>
+
+
+                <div id="lista-vehiculos" class="lista-vehiculos">
+
+                    <!--
+                        Los vehículos se generan
+                        mediante JavaScript.
+                    -->
+
+                </div>
+
+
+                <div class="acciones-vehiculo">
+
+                    <button id="btn-comenzar-carrera">
+                        COMENZAR CARRERA
+                    </button>
+
+
+                    <button id="btn-volver-vehiculos">
+                        VOLVER AL MENU
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             PANTALLA DEL GARAJE
+        ================================== -->
+
+        <section id="pantalla-garaje" class="pantalla">
+
+            <div class="garaje-panel">
+
+
+                <!-- =================================
+                     VISTA DEL VEHÍCULO
+                ================================== -->
+
+                <div class="vista-garaje">
+
+                    <h2 id="nombre-garaje">
+                        Vehículo
+                    </h2>
+
+
+                    <img id="carro-garaje" class="carro-garaje" src="assets/sprites/garaje/superauto.png"
+                        alt="Vehículo seleccionado">
+
+                </div>
+
+
+
+                <!-- =================================
+                     OPCIONES DEL GARAJE
+                ================================== -->
+
+                <div class="opciones-garaje">
+
+
+                    <!-- =================================
+                         MODELO DE VEHÍCULO
+                    ================================== -->
+
+                    <label>
+                        Modelo de vehículo
+                    </label>
+
+
+                    <div class="selector-sprite">
+
+                        <button type="button" id="btn-auto-prev" class="btn-flecha">
+                            ◀
+                        </button>
+
+
+                        <span id="txt-nombre-auto">
+                            Rayo Azul
+                        </span>
+
+
+                        <button type="button" id="btn-auto-sig" class="btn-flecha">
+                            ▶
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         TIPO DE LLANTA
+                    ================================== -->
+
+                    <label>
+                        Tipo de llanta
+                    </label>
+
+
+                    <div class="selector-sprite">
+
+                        <button type="button" id="btn-llanta-prev" class="btn-flecha">
+                            ◀
+                        </button>
+
+
+                        <img id="img-llanta-preview" src="assets/sprites/llantas/deportiva.png" alt="Llanta"
+                            class="preview-sprite">
+
+
+                        <button type="button" id="btn-llanta-sig" class="btn-flecha">
+                            ▶
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         TIPO DE ALERÓN
+                    ================================== -->
+
+                    <label>
+                        Tipo de alerón
+                    </label>
+
+
+                    <div class="selector-sprite">
+
+                        <button type="button" id="btn-aleron-prev" class="btn-flecha">
+                            ◀
+                        </button>
+
+
+                        <img id="img-aleron-preview" src="assets/sprites/alerones/normal.png" alt="Alerón"
+                            class="preview-sprite">
+
+
+                        <button type="button" id="btn-aleron-sig" class="btn-flecha">
+                            ▶
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         GUARDAR
+                    ================================== -->
+
+                    <button id="btn-guardar-garaje" type="button">
+                        Guardar personalización
+                    </button>
+
+
+
+                    <!-- =================================
+                         VOLVER
+                    ================================== -->
+
+                    <button id="btn-volver-garaje" type="button">
+                        Volver
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             PANTALLA DE CONFIGURACIÓN
+        ================================== -->
+
+        <section id="pantalla-configuracion" class="pantalla">
+
+            <div class="configuracion-contenido">
+
+                <h1>
+                    CONFIGURACIÓN
+                </h1>
+
+
+                <p class="subtitulo">
+                    Ajusta las opciones del juego
+                </p>
+
+
+                <div class="configuracion-panel">
+
+
+                    <label for="resolucion-juego">
+                        Resolución del juego
+                    </label>
+
+
+                    <select id="resolucion-juego">
+
+                        <option value="800x500">
+                            800 x 500
+                        </option>
+
+
+                        <option value="1000x600" selected>
+                            1000 x 600
+                        </option>
+
+
+                        <option value="1200x700">
+                            1200 x 700
+                        </option>
+
+                    </select>
+
+
+
+                    <label for="volumen-juego">
+                        Volumen
+                    </label>
+
+
+                    <input type="range" id="volumen-juego" min="0" max="100" value="70">
+
+
+                    <p id="valor-volumen">
+                        Volumen: 70%
+                    </p>
+
+
+                    <button id="btn-guardar-configuracion">
+                        GUARDAR CONFIGURACIÓN
+                    </button>
+
+
+                    <button id="btn-volver-configuracion">
+                        VOLVER AL MENU
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================
+        PANTALLA DE TUTORIAL
+        ================================== -->
+        <section id="pantalla-tutorial" class="pantalla">
+            <div class="tutorial-contenido">
+                <h1>TUTORIAL DE CONDUCCIÓN</h1>
+                <p class="subtitulo">Aprende a controlar tu vehículo antes de la carrera</p>
+
+                <div class="tutorial-grid">
+
+                    <!-- Panel con los sprites de los controles -->
+                    <div class="tutorial-controles">
+                        <h3>Controles</h3>
+
+                        <div class="control-item">
+                            <img src="assets/controles/tecla-w.png" alt="Acelerar">
+                            <span>Acelerar (W / 🠡)</span>
+                        </div>
+
+                        <div class="control-item">
+                            <img src="assets/controles/tecla-s.png" alt="Frenar">
+                            <span>Frenar / Reversa (S / 🠣)</span>
+                        </div>
+
+                        <div class="control-item">
+                            <img src="assets/controles/tecla-a.png" alt="Izquierda">
+                            <span>Girar Izquierda (A / 🠠)</span>
+                        </div>
+
+                        <div class="control-item">
+                            <img src="assets/controles/tecla-d.png" alt="Derecha">
+                            <span>Girar Derecha (D / 🠢)</span>
+                        </div>
+                    </div>
+
+                    <!-- Área de prueba con carro en movimiento -->
+                    <div class="tutorial-demo">
+                        <h3>Área de Práctica</h3>
+                        <canvas id="canvas-tutorial" width="400" height="300"></canvas>
+                        <p id="txt-estado-tutorial" style="color: #6d9fcf; margin-top: 10px; font-weight: bold;">
+                            ¡Usa las teclas para mover el carro de prueba!
+                        </p>
+                    </div>
+
+                </div>
+
+                <button id="btn-volver-tutorial" type="button"
+                    style="margin-top: 20px; width: auto; padding: 12px 30px;">
+                    VOLVER AL MENÚ
+                </button>
+            </div>
+        </section>
+
+
+        <!-- =================================
+             ÁREA DEL JUEGO
+        ================================== -->
+
+        <section id="pantalla-juego" class="pantalla">
+
+            <canvas id="canvas-juego" width="1000" height="600">
+
+                Tu navegador no soporta Canvas.
+
+            </canvas>
+
+
+            <button id="btn-volver-menu">
+                VOLVER AL MENÚ
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="js/datos/vehiculo.js"></script>
+
+    <script src="js/pantallas/garaje.js"></script>
+
+    <script src="js/pantallas/tutorial.js"></script>
+
+    <script src="js/pantallas/configuracion.js"></script>
+
+    <script src="js/juego/publico.js"></script>
+
+    <script src="js/juego/rivales.js"></script>
+
+    <script src="js/juego/pista.js"></script>
+
+    <script src="js/juego/jugador.js"></script>
+
+    <script src="js/juego/motor.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
