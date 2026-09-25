@@ -134,5 +134,4 @@ Entre las características previstas y desarrolladas se encuentran:
 ## Repositorio
 
 El código fuente del proyecto se encuentra disponible en GitHub:
-
-https://github.com/tu-usuario/nitro-island-racing.git
+https://github.com/JosueMiranda117/Nitro-Island-Racing
