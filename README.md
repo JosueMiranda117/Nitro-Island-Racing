@@ -1,5 +1,4 @@
 Nitro Island Racing
-
 Descripción
 
 Nitro Island Racing es un videojuego arcade de carreras desarrollado como proyecto escolar.
@@ -10,10 +9,12 @@ El escenario principal cuenta con elementos ambientales inmersivos como curvas p
 
 Integrantes
 
---Encarnacion Hernandez Ernesto
---Miranda Alatriste Josue Manuel
+Encarnacion Hernandez Ernesto
 
----Requisitos---
+Miranda Alatriste Josue Manuel
+
+Requisitos
+
 Para ejecutar el proyecto se necesita:
 
 Navegador web moderno, como Google Chrome, Microsoft Edge o Mozilla Firefox.
@@ -25,49 +26,31 @@ Git, para trabajar con el repositorio.
 Conexión a Internet para clonar o actualizar el repositorio.
 
 Instalación
-
-Clonar el repositorio:
-
+Clonar el repositorio
 git clone https://github.com/tu-usuario/nitro-island-racing.git
 
-Entrar a la carpeta del proyecto:
-
+Entrar a la carpeta del proyecto
 cd nitro-island-racing
+
+Verificación
 
 Verificar que estén presentes las carpetas y archivos principales del proyecto.
 
 Ejecución
 
-Actualmente, la parte principal del juego puede ejecutarse abriendo index.html en un navegador (preferiblemente mediante un servidor local como Live Server en Visual Studio Code para evitar bloqueos en la carga de recursos multimedia).
+Actualmente, la parte principal del juego puede ejecutarse abriendo index.html en un navegador, preferiblemente mediante un servidor local como Live Server en Visual Studio Code para evitar bloqueos en la carga de recursos multimedia.
 
 El proyecto también cuenta con una carpeta server/, destinada a la implementación de las funciones del servidor mediante Node.js.
 
 Cuando el servidor esté implementado, se podrá iniciar desde la carpeta correspondiente mediante Node.js.
 
 Controles
-
-Tecla
-
-Función
-
-W / Flecha arriba
-
-Acelerar
-
-S / Flecha abajo
-
-Frenar / Reversa
-
-A / Flecha izquierda
-
-Girar a la izquierda
-
-D / Flecha derecha
-
-Girar a la derecha
-
+Tecla	Función
+W / Flecha arriba	Acelerar
+S / Flecha abajo	Frenar / Reversa
+A / Flecha izquierda	Girar a la izquierda
+D / Flecha derecha	Girar a la derecha
 Estructura del proyecto
-
 nitro-island-racing/
 │
 ├── index.html
@@ -79,6 +62,7 @@ nitro-island-racing/
 ├── js/
 │   ├── datos/
 │   │   └── vehiculo.js
+│   │
 │   ├── juego/
 │   │   ├── audio.js
 │   │   ├── jugador.js
@@ -87,6 +71,7 @@ nitro-island-racing/
 │   │   ├── pista.js
 │   │   ├── publico.js
 │   │   └── rivales.js
+│   │
 │   └── pantallas/
 │       ├── carga.js
 │       ├── configuracion.js
