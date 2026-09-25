@@ -1,260 +1,161 @@
-\# Turbo Circuit 117
+Nitro Island Racing
 
+Descripción
 
+Nitro Island Racing es un videojuego arcade de carreras desarrollado como proyecto escolar.
 
-\## Descripción
+El jugador controla un vehículo que compite en una pista mediante una técnica de perspectiva pseudo-3D realizada con Canvas 2D, generando una sensación dinámica de profundidad, velocidad y fluidez.
 
+El escenario principal cuenta con elementos ambientales inmersivos como curvas progresivas, montañas al fondo, gradas con público animado, obstáculos en pista, simulación de físicas de aceleración/reversa, velocímetro, minimapa y vehículos rivales en constante movimiento.
 
+Integrantes
 
-Turbo Circuit 117 es un videojuego arcade de carreras desarrollado como proyecto escolar.
+Encarnacion Hernandez Ernesto
 
+Miranda Alatriste Josue Manuel
 
-
-El jugador controla un vehículo que compite en una pista con curvas, cambios de elevación, obstáculos y vehículos rivales. El juego utiliza una técnica de perspectiva pseudo-3D realizada mediante Canvas 2D para generar la sensación de profundidad y velocidad.
-
-
-
-El escenario principal del juego es \*\*Isla Calavera\*\*, una pista ambientada en una isla con elementos como rocas, palmeras, cuevas y obstáculos.
-
-
-
-\## Integrantes
-
-
-
-\* Encarnacion Hernandez Ernesto
-
-\* Miranda Alatriste Josue Manuel
-
-
-
-\## Requisitos
-
-
+Requisitos
 
 Para ejecutar el proyecto se necesita:
 
+Navegador web moderno, como Google Chrome, Microsoft Edge o Mozilla Firefox.
 
+Node.js.
 
-\* Navegador web moderno, como Google Chrome, Microsoft Edge o Mozilla Firefox.
+Git, para trabajar con el repositorio.
 
-\* Node.js.
+Conexión a Internet para clonar o actualizar el repositorio.
 
-\* Git, para trabajar con el repositorio.
+Instalación
 
-\* Conexión a Internet para clonar o actualizar el repositorio.
+Clonar el repositorio:
 
+git clone https://github.com/tu-usuario/nitro-island-racing.git
 
+Entrar a la carpeta del proyecto:
 
-\## Instalación
+cd nitro-island-racing
 
+Verificar que estén presentes las carpetas y archivos principales del proyecto.
 
+Ejecución
 
-1\. Clonar el repositorio:
+Actualmente, la parte principal del juego puede ejecutarse abriendo index.html en un navegador (preferiblemente mediante un servidor local como Live Server en Visual Studio Code para evitar bloqueos en la carga de recursos multimedia).
 
-
-
-```bash
-
-git clone https://github.com/JosueMiranda117/Turbo-Circuit-117.git
-
-```
-
-
-
-2\. Entrar a la carpeta del proyecto:
-
-
-
-```bash
-
-cd Turbo-Circuit-117
-
-```
-
-
-
-3\. Verificar que estén presentes las carpetas y archivos principales del proyecto.
-
-
-
-\## Ejecución
-
-
-
-Actualmente, la parte principal del juego puede ejecutarse abriendo `index.html` en un navegador.
-
-
-
-El proyecto también cuenta con una carpeta `server/`, destinada a la implementación de las funciones del servidor mediante Node.js.
-
-
+El proyecto también cuenta con una carpeta server/, destinada a la implementación de las funciones del servidor mediante Node.js.
 
 Cuando el servidor esté implementado, se podrá iniciar desde la carpeta correspondiente mediante Node.js.
 
+Controles
 
+Tecla
 
-\## Controles
+Función
 
+W / Flecha arriba
 
+Acelerar
 
-| Tecla                | Función              |
+S / Flecha abajo
 
-| -------------------- | -------------------- |
+Frenar / Reversa
 
-| W / Flecha arriba    | Acelerar             |
+A / Flecha izquierda
 
-| S / Flecha abajo     | Frenar               |
+Girar a la izquierda
 
-| A / Flecha izquierda | Girar a la izquierda |
+D / Flecha derecha
 
-| D / Flecha derecha   | Girar a la derecha   |
+Girar a la derecha
 
+Estructura del proyecto
 
-
-\## Estructura del proyecto
-
-
-
-```text
-
-Turbo-Circuit-117/
-
+nitro-island-racing/
 │
-
 ├── index.html
-
+├── app.js
 │
-
 ├── css/
-
 │   └── styles.css
-
 │
-
 ├── js/
-
-│   ├── main.js
-
-│   ├── Game.js
-
-│   ├── core/
-
-│   │   ├── AssetManager.js
-
-│   │   ├── GameLoop.js
-
-│   │   └── Input.js
-
-│   ├── entities/
-
-│   │   ├── Player.js
-
-│   │   └── Rival.js
-
-│   └── systems/
-
-│       ├── Checkpoint.js
-
-│       ├── Collision.js
-
-│       └── Road.js
-
+│   ├── datos/
+│   │   └── vehiculo.js
+│   ├── juego/
+│   │   ├── audio.js
+│   │   ├── jugador.js
+│   │   ├── motor.js
+│   │   ├── obstaculos.js
+│   │   ├── pista.js
+│   │   ├── publico.js
+│   │   └── rivales.js
+│   └── pantallas/
+│       ├── carga.js
+│       ├── configuracion.js
+│       ├── garaje.js
+│       ├── menu.js
+│       ├── taller.js
+│       └── tutorial.js
 │
-
 ├── assets/
-
+│   ├── controles/
+│   ├── pistas/
 │   └── sprites/
-
-│       ├── Obstacles/
-
-│       ├── Player/
-
-│       ├── Rivals/
-
-│       └── environment/
-
+│       ├── alerones/
+│       ├── autos/
+│       ├── garaje/
+│       ├── llantas/
+│       └── publico/
 │
-
 └── server/
+    └── server.js
 
-&#x20;   └── server.js
+Tecnologías utilizadas
 
-```
+HTML5
 
+CSS3
 
+JavaScript
 
-\## Tecnologías utilizadas
+Canvas 2D
 
+Node.js
 
+Git
 
-\* HTML5
-
-\* CSS3
-
-\* JavaScript
-
-\* Canvas 2D
-
-\* Node.js
-
-\* Git
-
-\* GitHub
-
-
+GitHub
 
 El proyecto no utiliza frameworks o motores de videojuegos como React, Angular, Vue, Phaser o Three.js.
 
+Características del proyecto
 
+Entre las características previstas y desarrolladas se encuentran:
 
-\## Características del proyecto
+Carrera arcade en 2D con efecto pseudo-3D.
 
+Carretera con curvas, perspectiva y animación continua de la pista.
 
+Vehículo controlado por el jugador con físicas de aceleración, fricción y reversa.
 
-Entre las características previstas para el desarrollo se encuentran:
+Vehículos rivales autónomos con detección de colisiones y cambio de carriles.
 
+Gradas con público adaptadas a la curvatura del horizonte.
 
+Obstáculos interactivos en pista.
 
-\* Carrera arcade.
+Menús de garaje, taller y personalización de vehículo (alerones, llantas, etc.).
 
-\* Carretera con perspectiva pseudo-3D.
+Tutorial de conducción interactivo.
 
-\* Curvas y cambios de elevación.
+Sistema de vueltas, cronómetro, minimapa y HUD dinámico con velocímetro en tiempo real.
 
-\* Vehículo controlado por el jugador.
+Pantalla final de posiciones y clasificación de carrera.
 
-\* Vehículos rivales.
+Comunicación con un servidor mediante Node.js.
 
-\* Obstáculos.
-
-\* Colisiones.
-
-\* Sistema de vueltas y tiempo.
-
-\* Checkpoints.
-
-\* Diferentes modos de juego.
-
-\* Sistema de puntuación y clasificación.
-
-\* Elementos ambientales.
-
-\* Efectos de sonido y música.
-
-\* Comunicación con un servidor mediante Node.js.
-
-
-
-\## Repositorio
-
-
+Repositorio
 
 El código fuente del proyecto se encuentra disponible en GitHub:
 
-
-
-https://github.com/JosueMiranda117/Turbo-Circuit-117.git
-
-
-
+https://github.com/tu-usuario/nitro-island-racing.git
