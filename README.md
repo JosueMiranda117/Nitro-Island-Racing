@@ -10,8 +10,8 @@ El escenario principal cuenta con elementos ambientales inmersivos como curvas p
 
 ## Integrantes
 
-- [Nombre del Integrante 1]
-- [Nombre del Integrante 2]
+- Encarnacion Hernandez Ernesto
+- Miranda Alatriste Josue Manuel
 
 ## Requisitos
 
