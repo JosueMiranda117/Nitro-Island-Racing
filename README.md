@@ -10,12 +10,10 @@ El escenario principal cuenta con elementos ambientales inmersivos como curvas p
 
 Integrantes
 
-Encarnacion Hernandez Ernesto
+--Encarnacion Hernandez Ernesto
+--Miranda Alatriste Josue Manuel
 
-Miranda Alatriste Josue Manuel
-
-Requisitos
-
+---Requisitos---
 Para ejecutar el proyecto se necesita:
 
 Navegador web moderno, como Google Chrome, Microsoft Edge o Mozilla Firefox.
